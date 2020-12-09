@@ -1,0 +1,41 @@
+{
+	"name": "feedsearch-tutorial",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"engines": {
+		"node": ">=14.x"
+	},
+	"scripts": {
+		"build": "babel src --out-dir dist",
+		"dev": "nodemon --exec npx babel-node ./src/index.js --inspect",
+		"lint": "eslint . --ext .js"
+	},
+	"author": "GetStream <support@getstream.io>",
+	"dependencies": {
+		"@graphql-tools/stitch": "^7.1.4",
+		"@stream-io/graphql-feeds": "0.1.0-alpha.6",
+		"algoliasearch": "^4.8.3",
+		"apollo-server": "^2.19.0",
+		"getstream": "^7.0.1",
+		"jsonwebtoken": "^8.5.1"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.12.8",
+		"@babel/core": "^7.12.9",
+		"@babel/node": "^7.12.6",
+		"@babel/plugin-proposal-class-properties": "^7.12.1",
+		"@babel/plugin-transform-runtime": "^7.12.1",
+		"@babel/preset-env": "^7.12.7",
+		"babel-eslint": "^10.1.0",
+		"babel-loader": "^8.2.2",
+		"babel-plugin-module-resolver": "^4.0.0",
+		"babel-plugin-transform-optional-chaining": "^7.0.0-beta.3",
+		"babel-preset-env": "^1.7.0",
+		"dotenv": "^8.2.0",
+		"eslint": "^7.15.0",
+		"eslint-config-get-off-my-lawn": "^5.0.1",
+		"nodemon": "^2.0.6",
+		"prettier": "^2.2.1"
+	}
+}
